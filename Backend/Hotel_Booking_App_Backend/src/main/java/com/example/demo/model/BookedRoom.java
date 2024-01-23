@@ -31,6 +31,8 @@ public class BookedRoom {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long bookingId;
+	// Long is used for to accessing highest capacity and we used collections and generics
+	
 	
 	@Column(name="check_In")
 	private LocalDate checkedInDate;
@@ -82,6 +84,11 @@ public class BookedRoom {
 	public void setBookingConfirmationCode(String bookingConfirmationCode)
 	{
 		this.bookingConfirmationCode = bookingConfirmationCode;
+	}
+
+	public void setRoom(Room room2) {
+		
+		
 	}
 
 
